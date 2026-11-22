@@ -1,0 +1,17 @@
+# Kişisel CV verileri depoya girmesin (Dışa aktar ile alınan dosyalar)
+cv-*.json
+kisisel/
+*.pdf
+
+# Editör / sistem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node (ileride araç eklenirse)
+node_modules/
+
+# Claude Code yerel ayarları
+.claude/
