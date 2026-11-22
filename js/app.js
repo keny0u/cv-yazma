@@ -15,7 +15,7 @@
     el.insertAdjacentHTML('afterbegin', CV.icon(el.dataset.icon));
   });
 
-  CV.store.load();
+  const hadData = CV.store.load().personal.fullName !== '';
   CV.editor.init();
 
   // ---- Önizleme ve yakınlaştırma ----
@@ -95,7 +95,7 @@
       const keepPhoto = CV.store.get().personal.photo;
       const s = CV.sampleState();
       s.settings = CV.store.get().settings;
-      s.personal.photo = keepPhoto;
+      if (keepPhoto) s.personal.photo = keepPhoto;
       CV.store.replace(s);
     },
     export() {
@@ -142,5 +142,7 @@
   // Görsel yüklenince yükseklik değişebilir
   cvEl.addEventListener('load', fitPreview, true);
 
-  draw();
+  // Tanıtım bağlantısı: ".../#ornek" boş bir tarayıcıda örnek CV'yi açar, mevcut veriye dokunmaz
+  if (location.hash === '#ornek' && !hadData) CV.store.replace(CV.sampleState());
+  else draw();
 })();

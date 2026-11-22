@@ -12,7 +12,7 @@ CV.sampleState = function () {
     website: 'denizaydin.dev',
     linkedin: 'linkedin.com/in/denizaydin',
     github: 'github.com/denizaydin',
-    photo: '',
+    photo: 'assets/ornek-foto.svg',
   };
   s.summary = 'Web ve mobil uygulamalarda 6 yıllık deneyime sahip full stack geliştirici. '
     + 'Kullanıcı odaklı arayüzler, ölçeklenebilir API’ler ve ekip içi mentorluk konularında güçlüyüm. '

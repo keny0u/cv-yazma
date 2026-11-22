@@ -3,8 +3,9 @@
 Tarayıcıda çalışan, **fotoğraflı** ve **şablonlu** ücretsiz CV oluşturucu.
 Kurulum gerektirmez, verileriniz hiçbir sunucuya gönderilmez.
 
-<!-- Ekran görüntüsü eklemek için: docs/ekran.png dosyasını koyup aşağıdaki satırı açın -->
-<!-- ![Ekran görüntüsü](docs/ekran.png) -->
+**[Hemen kullan →](https://keny0u.github.io/cv-yazma/)** · [Örnek CV ile aç](https://keny0u.github.io/cv-yazma/#ornek)
+
+![CV Yazma ekran görüntüsü: solda düzenleme formu, sağda Modern şablonla hazırlanmış CV önizlemesi](docs/ekran.png)
 
 ## Özellikler
 
